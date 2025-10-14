@@ -158,7 +158,7 @@ Transformer는 자연어 처리 분야의 패러다임을 완전히 바꾼 혁�
 
 **참고 자료:**
 - [Attention Is All You Need 논문](https://arxiv.org/abs/1706.03762)
-- [Transformer 시각화 도구](http://jalammar.github.io/illustrated-transformer/)
+- [Transformer 시각화 도구](https://jalammar.github.io/illustrated-transformer/)
 - [Hugging Face Transformers 라이브러리](https://huggingface.co/transformers/)
 
 *이 글이 도움이 되셨다면 댓글로 피드백을 남겨주세요! 🚀*
