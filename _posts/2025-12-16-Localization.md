@@ -109,4 +109,5 @@ map_frame 기준으로 odem_frame간의 관계를 조절해주면서, 최종적�
 
 ![](/assets/img/Peek%202025-12-16%2012-03.gif)
 -> 초기 값이 아예 모른다. 랜덤으로 localization을 해야할 때 쓰는 전략이 있다.
+
 -> global localization
