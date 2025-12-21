@@ -13,9 +13,9 @@ hidden: true
 # Nav2를 통한 Path Planning 실습
 - 로봇에게 목적지를 전달해주는 방법은 정말 다양합니다.
     - [[방법1] Rviz2의 버튼](#방법1-rviz2의-버튼)
-    - [[방법2] Action Server]()
-    - [[방법3] Topic]()
-    - [[방법4] 프로그래밍]()
+    - [[방법2] Action Server](#방법2-action-server)
+    - [[방법3] Topic](#방법3-topic)
+    - [[방법4] 프로그래밍](#방법4-프로그래밍)
 
 
 
