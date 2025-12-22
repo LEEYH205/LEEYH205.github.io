@@ -5,9 +5,9 @@ categories: [ROBOTICS, ROS2Nav2]
 tags: [Robotics, ROS2, SLAM, Global Localization]
 description: ""
 pin: false
-math: false
-mermaid: false
-hidden: true
+math: true
+mermaid: true
+hidden: false
 ---
 
 # Global Localization

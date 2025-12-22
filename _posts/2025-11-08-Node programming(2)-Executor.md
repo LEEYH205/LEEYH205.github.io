@@ -5,9 +5,9 @@ categories: [ROBOTICS, ROS2Nav2]
 tags: [Robotics, Node Programming, Executor, Callback Group]
 description: ""
 pin: false
-math: false
-mermaid: false
-hidden: true
+math: true
+mermaid: true
+hidden: false
 ---
 
 

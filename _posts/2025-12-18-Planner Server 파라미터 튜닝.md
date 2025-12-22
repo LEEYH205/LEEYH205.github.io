@@ -5,9 +5,9 @@ categories: [ROBOTICS, ROS2Nav2]
 tags: [Robotics, ROS2, Nav2, Planner, Parameter, tuning]
 description: ""
 pin: false
-math: false
-mermaid: false
-hidden: true
+math: true
+mermaid: true
+hidden: false
 ---
 
 # 로봇 시뮬레이션 환경 구성 및 설치

@@ -3,6 +3,11 @@ title: "Transformer 아키텍처 정리: Attention Is All You Need"
 date: 2025-08-06 19:00:00 +0900
 categories: [AI, NLP, 딥러닝]
 tags: [Transformer, Attention, BERT, GPT, 자연어처리]
+description: ""
+pin: false
+math: true
+mermaid: true
+hidden: false
 ---
 
 # Transformer 아키텍처 정리: Attention Is All You Need

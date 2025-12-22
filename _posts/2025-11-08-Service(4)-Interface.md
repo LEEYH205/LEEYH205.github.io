@@ -5,9 +5,9 @@ categories: [ROBOTICS, ROS2Nav2]
 tags: [Robotics, Service, Interface]
 description: ""
 pin: false
-math: false
-mermaid: false
-hidden: true
+math: true
+mermaid: true
+hidden: false
 ---
 
 서비스를 직접 만들어서 필요한 서비스의 Request, Response를 직접 작성하는 경우가 엄청 많다.

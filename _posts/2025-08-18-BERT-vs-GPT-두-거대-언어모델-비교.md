@@ -3,6 +3,11 @@ title: "BERT vs GPT: 두 거대 언어모델의 비교 분석"
 date: 2025-08-18 19:00:00 +0900
 categories: [AI, NLP, 언어모델]
 tags: [BERT, GPT, Transformer, 언어모델, 비교분석]
+description: ""
+pin: false
+math: true
+mermaid: true
+hidden: false
 ---
 
 # BERT vs GPT: 두 거대 언어모델의 비교 분석
