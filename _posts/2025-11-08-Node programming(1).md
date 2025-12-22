@@ -19,11 +19,10 @@ hidden: true
 - 휴머노이드 로봇과 자율 로봇 시스템을 개발하는 데 주력하며, 특히 서비스 로봇, 물류 자동화, 의료 및 연구 목적으로 사용되는 로봇 솔루션을 제공
 
 PMB2 (TIAGo Base)
-![](/assets/img/ros2nav2/img/image.png)
-![](/assets/img/ros2nav2/img/image%20(1).png)
+![](/assets/img/ros2nav2/img/PAL_TIAGo_Base.png)
 
 모듈형 설계로 다양한 용도로 확장 가능
-
+![](/assets/img/ros2nav2/img/PAL_TIAGo.png)
 
 ## 로봇 시뮬레이션 환경 구성
 1. 시뮬레이션 환경 구성을 위해 아래 명령어로 패키지를 설치하기.
