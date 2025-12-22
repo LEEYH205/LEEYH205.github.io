@@ -1,7 +1,7 @@
 ---
 title: "2025-11-08-Node programming(3)-Mutually Exclusive Callback Group"
 date: 2025-11-08 21:20:00 +0900
-categories: [ROBOTICS]
+categories: [ROBOTICS, ROS2Nav2]
 tags: [Robotics, Node Programming, Executor, Callback Group, Mutually Exclusive Callback Group]
 description: ""
 pin: false

@@ -1,7 +1,7 @@
 ---
 title: "Behavior Tree - Nav2 연동 테스트"
 date: 2025-12-20 15:50:00 +0900
-categories: [ROBOTICS]
+categories: [ROBOTICS, ROS2Nav2]
 tags: [Robotics, ROS2, Nav2, Behavior Tree]
 description: ""
 pin: false

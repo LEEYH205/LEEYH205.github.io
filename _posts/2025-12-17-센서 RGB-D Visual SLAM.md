@@ -1,7 +1,7 @@
 ---
 title: "센서 RGB-D Visual SLAM"
 date: 2025-12-17 14:30:00 +0900
-categories: [ROBOTICS]
+categories: [ROBOTICS, ROS2Nav2]
 tags: [Robotics, ROS2, SLAM, Sensor]
 description: ""
 pin: false

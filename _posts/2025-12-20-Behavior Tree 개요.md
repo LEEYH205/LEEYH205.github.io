@@ -1,7 +1,7 @@
 ---
 title: "Behavior Tree 개요"
 date: 2025-12-20 14:30:00 +0900
-categories: [ROBOTICS]
+categories: [ROBOTICS, ROS2Nav2]
 tags: [Robotics, ROS2, Nav2, Behavior Tree]
 description: ""
 pin: false

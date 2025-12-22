@@ -1,7 +1,7 @@
 ---
 title: "Action(3)-Server"
 date: 2025-11-08 17:00:00 +0900
-categories: [ROBOTICS]
+categories: [ROBOTICS, ROS2Nav2]
 tags: [Robotics, Action, Server]
 description: ""
 pin: false

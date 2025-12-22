@@ -1,7 +1,7 @@
 ---
 title: "Behavior Server 파라미터 튜닝"
 date: 2025-12-20 11:00:00 +0900
-categories: [ROBOTICS]
+categories: [ROBOTICS, ROS2Nav2]
 tags: [Robotics, ROS2, Nav2, Behavior, Parameter, tuning]
 description: ""
 pin: false

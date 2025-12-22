@@ -1,7 +1,7 @@
 ---
 title: "Costmap Filters - Keepout Filter 활용 (접근 금지 구역)"
 date: 2025-12-21 12:55:00 +0900
-categories: [ROBOTICS]
+categories: [ROBOTICS, ROS2Nav2]
 tags: [Robotics, ROS2, Nav2, Costmap Filters, Keepout Filter]
 description: ""
 pin: false

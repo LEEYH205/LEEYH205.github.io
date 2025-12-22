@@ -1,7 +1,7 @@
 ---
 title: "Costmap Filters - Speed Filter 활용 (속도 제한 구역)"
 date: 2025-12-21 13:35:00 +0900
-categories: [ROBOTICS]
+categories: [ROBOTICS, ROS2Nav2]
 tags: [Robotics, ROS2, Nav2, Costmap Filters, Speed Filter]
 description: ""
 pin: false

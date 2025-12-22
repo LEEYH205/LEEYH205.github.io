@@ -1,7 +1,7 @@
 ---
 title: "BT Navigator 파라미터 튜닝"
 date: 2025-12-20 11:20:00 +0900
-categories: [ROBOTICS]
+categories: [ROBOTICS, ROS2Nav2]
 tags: [Robotics, ROS2, Nav2, BT Navigator, Parameter, tuning]
 description: ""
 pin: false

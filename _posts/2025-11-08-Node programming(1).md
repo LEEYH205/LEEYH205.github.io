@@ -1,7 +1,7 @@
 ---
 title: "Node Programmming(1)"
 date: 2025-11-08 20:00:00 +0900
-categories: [ROBOTICS]
+categories: [ROBOTICS, ROS2Nav2]
 tags: [Robotics, Node Programming]
 description: ""
 pin: false

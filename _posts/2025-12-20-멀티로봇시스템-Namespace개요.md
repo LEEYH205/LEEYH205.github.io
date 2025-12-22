@@ -1,7 +1,7 @@
 ---
 title: "멀티로봇시스템-Namespace개요"
 date: 2025-12-20 16:20:00 +0900
-categories: [ROBOTICS]
+categories: [ROBOTICS, ROS2Nav2]
 tags: [Robotics, ROS2, Nav2, MultiRobotSystem, Namespace]
 description: ""
 pin: false

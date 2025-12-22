@@ -1,7 +1,7 @@
 ---
 title: "Global Localization 전략"
 date: 2025-12-17 09:00:00 +0900
-categories: [ROBOTICS]
+categories: [ROBOTICS, ROS2Nav2]
 tags: [Robotics, ROS2, SLAM, Global Localization]
 description: ""
 pin: false

@@ -1,7 +1,7 @@
 ---
 title: "Action(2)-Client"
 date: 2025-11-08 16:00:00 +0900
-categories: [ROBOTICS]
+categories: [ROBOTICS, ROS2Nav2]
 tags: [Robotics, Action, Client]
 description: ""
 pin: false

@@ -1,7 +1,7 @@
 ---
 title: "Service(2)-Client"
 date: 2025-11-05 22:20:00 +0900
-categories: [ROBOTICS]
+categories: [ROBOTICS, ROS2Nav2]
 tags: [Robotics, Service, Client]
 description: ""
 pin: false
