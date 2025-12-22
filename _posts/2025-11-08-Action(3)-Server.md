@@ -18,7 +18,7 @@ hidden: true
     ```bash
     ros2 interface show turtlesim/action/RotateAbsolute
     ```
-    ![](/assets/img/Screenshot%20from%202025-11-08%2017-00-40.png)
+    ![](/assets/img/ros2nav2/img/Screenshot%20from%202025-11-08%2017-00-40.png)
 
 - 시나리오
     - 위 액션 타입을 활용하여 `/rotate_tiago` 액션을 생성
@@ -126,6 +126,6 @@ ros2 action send_goal -f /rotate_tiago turtlesim/action/RotateAbsolute "{theta: 
 ros2 action send_goal -f /rotate_tiago turtlesim/action/RotateAbsolute "{theta: -1.5708}"
 ```
 
-![](/assets/img/Peek%202025-11-08%2017-26.gif)
+![](/assets/img/ros2nav2/gif/Peek%202025-11-08%2017-26.gif)
 > 지금은 odometry 값 바탕으로 회전한게 아니라, 속도값에다가 시간 곱해서 변위를 얻어서 회전한 것이기 때문에, 정확하게 돌지 않았음.
 

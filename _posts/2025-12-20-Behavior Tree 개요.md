@@ -22,10 +22,10 @@ hidden: true
 - 다시 말해, 리프 노드는 Behavior Tree를 특정 응용 프로그램을 위한 하위
 수준 코드와 연결하는 지점
 
-![Behavior Tree 예시](/assets/img/Screenshot%20from%202025-12-20%2014-32-54.png)
+![Behavior Tree 예시](/assets/img/ros2nav2/img/Screenshot%20from%202025-12-20%2014-32-54.png)
 
 # BT 활용을 위한 Software Architecture
-![](/assets/img/Screenshot%20from%202025-12-20%2014-40-22.png)
+![](/assets/img/ros2nav2/img/Screenshot%20from%202025-12-20%2014-40-22.png)
 
 추상적인 메커니즘
 추상화를 위해 C++로 구축을 하고,
@@ -43,11 +43,11 @@ BT를 설계하고, 어플리케이션 내부에 논리적 연결을 구상하�
 • **Task 하나하나를 구현할 때에는 BehaviourTree.CPP 프레임워크를 사용**하며, 이는 계층과 Behavior Trees 구축을
 가능하도록 함
 
-![](/assets/img/Screenshot%20from%202025-12-20%2014-43-19.png)
+![](/assets/img/ros2nav2/img/Screenshot%20from%202025-12-20%2014-43-19.png)
 
 
 ## 행동 예시
-![](/assets/img/Screenshot%20from%202025-12-20%2014-44-38.png)
+![](/assets/img/ros2nav2/img/Screenshot%20from%202025-12-20%2014-44-38.png)
 
 • “→” 기호: 논리적 AND 연산(Sequence)
 
@@ -68,13 +68,13 @@ BT를 설계하고, 어플리케이션 내부에 논리적 연결을 구상하�
 - 사용자 정의 노드를 쉽게 정의하고 등록할 수 있음 (조건 노드, 액션 노드, 컨트롤러 노드(시퀀스, 셀렉터 등) 등을 지원)
 - XML 파일을 사용하여 Behavior Tree 구조를 정의할 수 있으며, 이를 통해 트리를 쉽게 저장하고 로드할 수 있음
 
-![](/assets/img/Screenshot%20from%202025-12-20%2014-47-58.png)
+![](/assets/img/ros2nav2/img/Screenshot%20from%202025-12-20%2014-47-58.png)
 
 ## [Groot](https://www.behaviortree.dev/groot/)
 
 • GUI를 통해 Behavior Tree의 상태를 시각화할 수 있는 도구
-![](/assets/img/Screenshot%20from%202025-12-20%2014-48-52.png)
+![](/assets/img/ros2nav2/img/Screenshot%20from%202025-12-20%2014-48-52.png)
 • Nav2 지원 중단 (Humble 기준)
 - 기술적 한계
 - 실용성 문제
-![](/assets/img/Screenshot%20from%202025-12-20%2014-49-25.png)
+![](/assets/img/ros2nav2/img/Screenshot%20from%202025-12-20%2014-49-25.png)

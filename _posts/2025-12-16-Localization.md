@@ -12,7 +12,7 @@ hidden: true
 
 # 필수 Frame 개념 총정리
 
-![](/assets/img/Screenshot%20from%202025-12-16%2011-12-10.png)
+![](/assets/img/ros2nav2/img/Screenshot%20from%202025-12-16%2011-12-10.png)
 
 • map
 - 로봇이 동작하는 전체 환경에 대한 지도의 기준을 나타내는 프레임
@@ -56,7 +56,7 @@ IMU와 결합하여 사용함
 
 • lifecycle_manager 노드
 
-![](/assets/img/Screenshot%20from%202025-12-16%2011-18-16.png)
+![](/assets/img/ros2nav2/img/Screenshot%20from%202025-12-16%2011-18-16.png)
 
 
 # 2D LiDAR 기반의 Localization Package
@@ -80,23 +80,23 @@ https://github.com/ros-navigation/navigation2/tree/main/nav2_amcl
 - 파티클도 넓게 많이 뿌리겠다, 적게 뿌려서 컴퓨팅파워를 아끼겠다를 사용자가 설정할 수 있다.
 
 
-![](/assets/img/Peek%202025-12-16%2011-42.gif)
+![](/assets/img/ros2nav2/gif/Peek%202025-12-16%2011-42.gif)
 AMCL 테스트
 
-![](/assets/img/Screenshot%20from%202025-12-16%2011-44-34.png)
-![](/assets/img/Screenshot%20from%202025-12-16%2011-46-32.png)
+![](/assets/img/ros2nav2/img/Screenshot%20from%202025-12-16%2011-44-34.png)
+![](/assets/img/ros2nav2/img/Screenshot%20from%202025-12-16%2011-46-32.png)
 처음 파티클을 뿌린걸 보면 위치가 안맞는 것을 볼 수 있다.
 localization이 잘 안된 것임.
 
-![](/assets/img/Screenshot%20from%202025-12-16%2011-49-17.png)
+![](/assets/img/ros2nav2/img/Screenshot%20from%202025-12-16%2011-49-17.png)
 로봇을 움직여보면, 점점 localization이 되어가는 것을 볼 수 있다.
 하지만, 아직 확률이 남아있는 부분이 있다.
 
-![](/assets/img/Screenshot%20from%202025-12-16%2011-50-39.png)
+![](/assets/img/ros2nav2/img/Screenshot%20from%202025-12-16%2011-50-39.png)
 로봇을 계속 움직여보면, 파티클이 높은 확률만 남아있는 것을 알 수 있다.
 
-![](/assets/img/Screenshot%20from%202025-12-16%2011-44-51.png)
-![](/assets/img/Peek%202025-12-16%2011-54.gif)
+![](/assets/img/ros2nav2/img/Screenshot%20from%202025-12-16%2011-44-51.png)
+![](/assets/img/ros2nav2/gif/Peek%202025-12-16%2011-54.gif)
 map_frame기준으로 odom_frame의 관계가 조정되는 것을 확인할 수 있다.
 담당 : localization node
 
@@ -107,7 +107,7 @@ map_frame 기준으로 odem_frame간의 관계를 조절해주면서, 최종적�
 대략적인 위치랑 방향의 초기값이 중요하다.
 그래야, localization이 잘된다.
 
-![](/assets/img/Peek%202025-12-16%2012-03.gif)
+![](/assets/img/ros2nav2/gif/Peek%202025-12-16%2012-03.gif)
 -> 초기 값이 아예 모른다. 랜덤으로 localization을 해야할 때 쓰는 전략이 있다.
 
 -> global localization

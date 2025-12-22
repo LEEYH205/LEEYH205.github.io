@@ -14,7 +14,7 @@ hidden: true
 
 • 시스템이나 알고리즘이 얼마나 정확하게 동작하는지를 평가하기 위해 사용되는 참조 데이터
 
-![](/assets/img/Screenshot%20from%202025-12-17%2015-03-03.png)
+![](/assets/img/ros2nav2/img/Screenshot%20from%202025-12-17%2015-03-03.png)
 
 
 ## SLAM에서 Ground Truth는?
@@ -26,14 +26,14 @@ hidden: true
 2. 성능 비교
 3. 오류 분석
 
-![](/assets/img/Screenshot%20from%202025-12-17%2015-04-04.png)
+![](/assets/img/ros2nav2/img/Screenshot%20from%202025-12-17%2015-04-04.png)
 
 
 # Ground Truth를 얻는 방법
 ## 실외 (Outdoor)
 
 ### RTK(Real Time Kinematic) GPS 또는 Network RTK GPS
-![](/assets/img/Screenshot%20from%202025-12-17%2015-07-44.png)
+![](/assets/img/ros2nav2/img/Screenshot%20from%202025-12-17%2015-07-44.png)
 • 이동형 수신기와 기준국 사이의 상대적인 위치를 매우 높은 정확도로
 계산하는 고정밀 위치 측정 기술
 
@@ -48,7 +48,7 @@ hidden: true
 
 ## 실내 (Indoor)
 ### Laser Tracker
-![](/assets/img/Screenshot%20from%202025-12-17%2015-08-17.png)
+![](/assets/img/ros2nav2/img/Screenshot%20from%202025-12-17%2015-08-17.png)
 • 레이저 빔을 사용하여 3차원 공간에서 물체의 위치를 매우 정밀하게
 측정하는 장비 (주로 산업용 측정이나 정밀 공학에서 사용)
 
@@ -62,7 +62,7 @@ hidden: true
 - 반사율이 낮은 표면이나 장애물이 있는 경우 측정이 어려움
 
 ### Motion Capture Camera
-![](/assets/img/Screenshot%20from%202025-12-17%2015-08-43.png)
+![](/assets/img/ros2nav2/img/Screenshot%20from%202025-12-17%2015-08-43.png)
 • 다수의 적외선 카메라를 사용하여 마커의 3차원 위치를 측정하는 장비
 
 • 장점
@@ -75,7 +75,7 @@ hidden: true
 - 카메라 설치 및 캘리브레이션 필요
 
 ### AR Tag
-![](/assets/img/Screenshot%20from%202025-12-17%2015-09-08.png)
+![](/assets/img/ros2nav2/img/Screenshot%20from%202025-12-17%2015-09-08.png)
 https://berndpfrommer.github.io/tagslam_web/
 
 • 특정 패턴이 인쇄된 마커를 카메라로 인식하여 마커의 3차원 위치 및 자세를
@@ -101,11 +101,11 @@ https://github.com/MichaelGrupp/evo
 - KITTI pose files
 - EuRoC MAV (.csv groundtruth and TUM trajectory file)
 - ROS and ROS2 bagfile
-![](/assets/img/Screenshot%20from%202025-12-17%2015-14-09.png)
-![](/assets/img/Screenshot%20from%202025-12-17%2015-14-21.png)
+![](/assets/img/ros2nav2/img/Screenshot%20from%202025-12-17%2015-14-09.png)
+![](/assets/img/ros2nav2/img/Screenshot%20from%202025-12-17%2015-14-21.png)
 
 ### Absolute Trajectory Error (ATE)
-![](/assets/img/Screenshot%20from%202025-12-17%2015-15-18.png)
+![](/assets/img/ros2nav2/img/Screenshot%20from%202025-12-17%2015-15-18.png)
 
 ### Relative Pose Error (RPE)
-![](/assets/img/Screenshot%20from%202025-12-17%2015-15-51.png)
+![](/assets/img/ros2nav2/img/Screenshot%20from%202025-12-17%2015-15-51.png)

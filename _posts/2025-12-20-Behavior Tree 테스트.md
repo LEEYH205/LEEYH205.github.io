@@ -462,7 +462,7 @@ colcon build --symlink-install --packages-select simple_bt_example
 ```dash
 ros2 run simple_bt_example ex_bt1
 ```
-![](/assets/img/Screenshot%20from%202025-12-20%2015-09-19.png)
+![](/assets/img/ros2nav2/img/Screenshot%20from%202025-12-20%2015-09-19.png)
 
 
 ## 로봇 동작 클래스 정의
@@ -590,7 +590,7 @@ static const char* xml_text = R"(
 </root>
 )";
 ```
-![](/assets/img/BTtest.png)
+![](/assets/img/ros2nav2/img/BTtest.png)
 - 로봇 작업의 논리적 연결을 반영하는 Behavior Tree를 정의
 - 로봇 동작 순서
     1. **FindBall (공 찾기)**
@@ -642,13 +642,13 @@ int main()
 ---
 
 - 아래 그림은 위 [예제1](#예제-1-특정-시나리오로-보는-bt)에서 사용했던 BT 블록을 간단하게 나타낸 것.
-![](/assets/img/BTtest_2.png)
+![](/assets/img/ros2nav2/img/BTtest_2.png)
     - Behavior Tree는 Root 노드로 시작합니다. 노드는 특정 주파수로 틱(ticks)이라고 불리는 신호를 제공하여 자식 노드들의 실행을 허용합니다. 노드는 틱을 받을 때만 실행됩니다. 실행이 진행 중이면 자식 노드는 즉시 부모에게 Running을 반환하고, 목표가 달성되면 Success를, 그렇지 않으면 Failure를 반환합니다.
 
 - **`Sequence(→)`**는 아래 다이어그램과 같이 이루어집니다.
     - `Sequence(→)`이기 때문에 Task1, 2, 3이 모두 성공해야 성공입니다.
     - 두 번째 그림은 Task 2에서 실패했기 때문에 실패입니다.
-    ![](/assets/img/BTtest_3.png)
+    ![](/assets/img/ros2nav2/img/BTtest_3.png)
     - 이를 XML로 표현하면 아래와 같습니다.
         ```XML
         <root main_tree_to_execute = "MainTree" >
@@ -669,7 +669,7 @@ int main()
 ```DASH
 ros2 run simple_bt_example ex_bt2
 ```
-![](/assets/img/Screenshot%20from%202025-12-20%2015-22-06.png)
+![](/assets/img/ros2nav2/img/Screenshot%20from%202025-12-20%2015-22-06.png)
 - 보시다시피, 자식 노드에서 첫 번째 Failure가 발생하면 Sequence가 종료됩니다. Sequence가 성공하려면 모든 노드가 SUCCESS를 반환해야 합니다.
 ```C++
 BT::NodeStatus RobotTask1::tick()
@@ -698,10 +698,10 @@ BT::NodeStatus RobotTask3::tick()
 - **`Fallback(?)`**은 아래 다이어그램과 같이 이루어집니다.
     - `Fallback(?)`이기 때문에 Task1, 2, 3 중 하나만 성공해도 성공입니다.
 
-    ![](/assets/img/BTtest_4.png)
+    ![](/assets/img/ros2nav2/img/BTtest_4.png)
 
 - 아래 그림은 틱과 콜백 흐름
-    ![](/assets/img/BTtest_5.png)
+    ![](/assets/img/ros2nav2/img/BTtest_5.png)
         - 이를 XML로 표현하면 아래와 같습니다.
     ```xml
     <root main_tree_to_execute = "MainTree" >
@@ -719,7 +719,7 @@ BT::NodeStatus RobotTask3::tick()
 ```dash
 ros2 run simple_bt_example ex_bt3
 ```
-![](/assets/img/Screenshot%20from%202025-12-20%2015-33-28.png)
+![](/assets/img/ros2nav2/img/Screenshot%20from%202025-12-20%2015-33-28.png)
 - 첫 번째 자식 노드에서 FAILURE가 발생하지만, 두 번째 자식 노드가 SUCCESS이므로, RobotTask3은 수행하지 않고 Fallback은 SUCCESS 입니다.
 ```c++
 BT::NodeStatus RobotTask1::tick()
@@ -750,19 +750,19 @@ BT::NodeStatus RobotTask3::tick()
 - 이러한 특성으로 인해 `ReactiveSequence`는 비동기 이벤트나 지속적으로 변하는 상태를 다루는 데 매우 유용합니다. 예를 들어, 로봇이 장애물을 피하거나, 다양한 센서 입력을 실시간으로 처리해야 하는 상황에서 효과적으로 사용할 수 있습니다.
 
 ## 상황 예시
-![](/assets/img/bt-demo1.gif)
+![](/assets/img/ros2nav2/gif/bt-demo1.gif)
 장애물에 가로막힌 상황
 
-![](/assets/img/BTtest_6.png)
+![](/assets/img/ros2nav2/img/BTtest_6.png)
 - Root가 `Reactive Sequence`에 연결되어 있음을 볼 수 있습니다. 그 다음, 첫 번째 `Reactive Sequence`는 다음과 연결됩니다.
     - BlackBoard
     - 두 번째 `Reactive Sequence`
     - 로봇 이동
 - BlackBoard는 건너뛰고 두 번째 `Reactive Sequence` 블록(노드)을 고려해봅시다. `Reactive Sequence`는 논리적 AND 게이트처럼 작동합니다. 모든 입력이 TRUE이면 AND 게이트의 출력도 TRUE입니다.
 - 로봇은 회전하다가 (TRUE), 그 후 로봇은 레이저를 사용하여 장애물이 없는 경로를 스캔합니다. 아래와 같이 수동으로 장애물을 제거했으므로 TRUE가 됩니다.
-    ![](/assets/img/bt-demo2.gif)
+    ![](/assets/img/ros2nav2/gif/bt-demo2.gif)
 - 장애물 제거 후, 두 번째 Reactive Sequence가 TRUE가 되므로 로봇은 MoveRobot을 수행해서 탈출합니다.
-    ![](/assets/img/bt-demo3.gif)
+    ![](/assets/img/ros2nav2/gif/bt-demo3.gif)
 
 # Groot를 통한 BT 시각화
 
@@ -788,4 +788,4 @@ chmod +x Groot2-v1.7.0-linux-installer.run
 alias groot2='cd ~/Groot2/bin && ./groot2'
 ```
 
-![](/assets/img/Screenshot%20from%202025-12-20%2015-46-16.png)
+![](/assets/img/ros2nav2/img/Screenshot%20from%202025-12-20%2015-46-16.png)

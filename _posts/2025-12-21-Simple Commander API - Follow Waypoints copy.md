@@ -185,12 +185,12 @@ hidden: true
     ros2 run nav2_programming follow_waypoints
     ```
 
-![](/assets/img/Screenshot%20from%202025-12-21%2012-37-31.png)
+![](/assets/img/ros2nav2/img/Screenshot%20from%202025-12-21%2012-37-31.png)
 `waypoint_pause_duration: 5000`로 세팅해서 5초 동안 기다린다.
 
 
-![](/assets/img/Peek%202025-12-21%2012-36.gif)
-![](/assets/img/Peek%202025-12-21%2012-47.gif)
+![](/assets/img/ros2nav2/gif/Peek%202025-12-21%2012-36.gif)
+![](/assets/img/ros2nav2/gif/Peek%202025-12-21%2012-47.gif)
 
 https://github.com/ros-navigation/navigation2/blob/main/nav2_waypoint_follower/src/waypoint_follower.cpp
 https://github.com/ros-navigation/navigation2/tree/main/nav2_waypoint_follower/plugins

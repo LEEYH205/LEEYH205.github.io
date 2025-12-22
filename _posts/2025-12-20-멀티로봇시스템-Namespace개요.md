@@ -25,13 +25,13 @@ hidden: true
 
 
 ## namespace (1) - node
-![](/assets/img/Screenshot%20from%202025-12-20%2016-19-45.png)
+![](/assets/img/ros2nav2/img/Screenshot%20from%202025-12-20%2016-19-45.png)
 
 ## namespace (2) - topic
-![](/assets/img/Screenshot%20from%202025-12-20%2016-20-10.png)
+![](/assets/img/ros2nav2/img/Screenshot%20from%202025-12-20%2016-20-10.png)
 
 ## namespace (3) - frame
 ```DASH
 ros2 run tf2_tools view_frames
 ```
-![](/assets/img/Screenshot%20from%202025-12-20%2016-21-29.png)
+![](/assets/img/ros2nav2/img/Screenshot%20from%202025-12-20%2016-21-29.png)

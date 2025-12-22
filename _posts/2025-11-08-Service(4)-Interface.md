@@ -27,7 +27,7 @@ bool success
 string message
 ```
 
-![](/assets/img/Screenshot%20from%202025-11-08%2015-23-26.png)
+![](/assets/img/ros2nav2/img/Screenshot%20from%202025-11-08%2015-23-26.png)
 
 ---
 
@@ -80,4 +80,4 @@ entry_points={
 },
 ```
 
-![](/assets/img/Peek_2025-11-08_15-34.gif)
+![](/assets/img/ros2nav2/gif/Peek_2025-11-08_15-34.gif)

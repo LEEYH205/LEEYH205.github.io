@@ -19,8 +19,8 @@ hidden: true
 - 휴머노이드 로봇과 자율 로봇 시스템을 개발하는 데 주력하며, 특히 서비스 로봇, 물류 자동화, 의료 및 연구 목적으로 사용되는 로봇 솔루션을 제공
 
 PMB2 (TIAGo Base)
-![](/assets/img/image.png)
-![](/assets/img/image%20(1).png)
+![](/assets/img/ros2nav2/img/image.png)
+![](/assets/img/ros2nav2/img/image%20(1).png)
 
 모듈형 설계로 다양한 용도로 확장 가능
 
@@ -37,7 +37,7 @@ pip install transforms3d
 ros2 launch pmb2_gazebo pmb2_gazebo.launch.py is_public_sim:=True world_name:=simple_office_with_people
 ```
 
-![](/assets/img/Screenshot%20from%202025-11-08%2020-05-37.png)
+![](/assets/img/ros2nav2/img/Screenshot%20from%202025-11-08%2020-05-37.png)
 
 
 ---
@@ -162,7 +162,7 @@ if __name__ == '__main__':
 ```
 
 ## 문제의 동작 화면
-![](/assets/img/Peek%202025-11-08%2020-44.gif)
+![](/assets/img/ros2nav2/gif/Peek%202025-11-08%2020-44.gif)
 
 ```bash
 [WARN]: >>> Front Range Value=0.5393399596214294

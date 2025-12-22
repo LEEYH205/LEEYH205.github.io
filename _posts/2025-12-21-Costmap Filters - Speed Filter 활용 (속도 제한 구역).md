@@ -17,11 +17,11 @@ hidden: true
 ## 지도 수정하기
 
 1. GIMP에서 `~/nav2_ws/src/neobotix/neo_simulation2/maps/aws.pgm` 파일을 열어준 뒤, 지도를 수정해줍니다. 색상 변경 시 아래 도구를 통해 `L 값`을 변경하여 `검정(0)~흰색(100)` 비율을 선택해줍니다.
-![](/assets/img/Screenshot%20from%202025-12-21%2013-36-38.png)
+![](/assets/img/ros2nav2/img/Screenshot%20from%202025-12-21%2013-36-38.png)
 
 
 2. 수정 완료 후, [File] - [Export As…]를 누른 뒤 파일 이름을 aws_speed.pgm으로 저장합니다.
-![](/assets/img/Screenshot%20from%202025-12-21%2013-41-13.png)
+![](/assets/img/ros2nav2/img/Screenshot%20from%202025-12-21%2013-41-13.png)
 
 3. 아래 코드를 통해 기존 aws.yaml을 aws_speed.yaml으로 복사하고 지도 파일을 aws_speed.pgm으로 수정합니다.
 ```bash
@@ -37,8 +37,8 @@ occupied_thresh: 1.0 # 수정 (기존: 0.65)
 free_thresh: 0.0 # 수정 (기존: 0.196)
 ```
 
-![](/assets/img/Screenshot%20from%202025-12-21%2013-39-59.png)
-![](/assets/img/Screenshot%20from%202025-12-21%2013-40-25.png)
+![](/assets/img/ros2nav2/img/Screenshot%20from%202025-12-21%2013-39-59.png)
+![](/assets/img/ros2nav2/img/Screenshot%20from%202025-12-21%2013-40-25.png)
 
 - **mode: trinary (기본)**
     - 맵의 픽셀 값을 세 가지 상태로 변환 (자유 영역, 장애물, 알려지지 않은 영역)
@@ -218,14 +218,14 @@ filter_mask_server:
     # terminal 3
     ros2 launch neo_nav2_bringup rviz_launch.py
     ```
-![](/assets/img/Screenshot%20from%202025-12-21%2013-51-15.png)
+![](/assets/img/ros2nav2/img/Screenshot%20from%202025-12-21%2013-51-15.png)
 4. Rviz2에서 /speed_filter_mask 토픽을 시각화하고 지도를 확인합니다.
-![](/assets/img/Screenshot%20from%202025-12-21%2013-52-22.png)
+![](/assets/img/ros2nav2/img/Screenshot%20from%202025-12-21%2013-52-22.png)
 ```bash
 ros2 launch neo_simulation2 navigation.launch.py use_amcl:=True
 ```
 를 다시 실행
-![](/assets/img/Screenshot%20from%202025-12-21%2013-54-01.png)
+![](/assets/img/ros2nav2/img/Screenshot%20from%202025-12-21%2013-54-01.png)
 
-![](/assets/img/Peek%202025-12-21%2014-00.gif)
-![](/assets/img/Peek%202025-12-21%2014-02.gif)
+![](/assets/img/ros2nav2/gif/Peek%202025-12-21%2014-00.gif)
+![](/assets/img/ros2nav2/gif/Peek%202025-12-21%2014-02.gif)

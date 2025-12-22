@@ -21,22 +21,22 @@ hidden: true
     ```bash
     sudo apt install gimp
     ```
-    ![](/assets/img/Screenshot%20from%202025-12-21%2012-57-06.png)
+    ![](/assets/img/ros2nav2/img/Screenshot%20from%202025-12-21%2012-57-06.png)
 
 2. GIMP를 실행하고 수정할 지도 파일을 열어줍니다.
     - [File] - [Open] - [지도 파일 선택]
     - **지도 파일 경로**: `~/nav2_ws/src/neobotix/neo_simulation2/maps/aws.pgm`
 
-    ![](/assets/img/Screenshot%20from%202025-12-21%2012-58-02.png)
+    ![](/assets/img/ros2nav2/img/Screenshot%20from%202025-12-21%2012-58-02.png)
 
 3. Rectangle Select Tool을 통해 Keepout Filter를 적용할 영역을 선택합니다.
 
 4. Bucket Fill Tool을 통해 선택한 영영의 색상을 검정색으로 채워줍니다.
 
-    ![](/assets/img/Screenshot%20from%202025-12-21%2012-59-11.png)
+    ![](/assets/img/ros2nav2/img/Screenshot%20from%202025-12-21%2012-59-11.png)
 
 5. [File] - [Export As…]를 누른 뒤 파일 이름을 aws_keepout.pgm으로 저장하고 아래와 같은 화면에서 Export 버튼을 누릅니다.
-    ![](/assets/img/Screenshot%20from%202025-12-21%2013-00-11.png)
+    ![](/assets/img/ros2nav2/img/Screenshot%20from%202025-12-21%2013-00-11.png)
 
 
 아래 코드를 통해 기존 aws.yaml을 aws_keepout.yaml으로 복사하고 지도 파일을 aws_keepout.pgm으로 수정합니다.
@@ -52,12 +52,12 @@ occupied_thresh: 0.65
 free_thresh: 0.196
 ```
 
-![](/assets/img/Screenshot%20from%202025-12-21%2013-01-17.png)
-![](/assets/img/Screenshot%20from%202025-12-21%2013-03-22.png)
-![](/assets/img/Screenshot%20from%202025-12-21%2013-03-43.png)
+![](/assets/img/ros2nav2/img/Screenshot%20from%202025-12-21%2013-01-17.png)
+![](/assets/img/ros2nav2/img/Screenshot%20from%202025-12-21%2013-03-22.png)
+![](/assets/img/ros2nav2/img/Screenshot%20from%202025-12-21%2013-03-43.png)
 
 
-![](/assets/img/Screenshot%20from%202025-12-21%2013-04-49.png)
+![](/assets/img/ros2nav2/img/Screenshot%20from%202025-12-21%2013-04-49.png)
 - 마스크의 각 픽셀 음영은 사용할 특정 Costmap 필터에 대한 인코딩된 정보를 의미
     - **0**: free cell
     - **100**: occupied cell (로봇이 통과할 수 없음)
@@ -73,7 +73,7 @@ free_thresh: 0.196
 
 `/home/lyh/nav2_ws/install/neo_simulation2/share/neo_simulation2/maps`에 제대로 빌드되어있는 것을 확인할 수 있다.
 
-![](/assets/img/Screenshot%20from%202025-12-21%2013-06-27.png)
+![](/assets/img/ros2nav2/img/Screenshot%20from%202025-12-21%2013-06-27.png)
 
 ## Keepout Filter 적용 실습
 
@@ -108,8 +108,8 @@ free_thresh: 0.196
     
     ...**
     ```
-    ![](/assets/img/Screenshot%20from%202025-12-21%2013-13-50.png)
-    ![](/assets/img/Screenshot%20from%202025-12-21%2013-14-31.png)
+    ![](/assets/img/ros2nav2/img/Screenshot%20from%202025-12-21%2013-13-50.png)
+    ![](/assets/img/ros2nav2/img/Screenshot%20from%202025-12-21%2013-14-31.png)
 2. `~/nav2_ws/src/neobotix/neo_simulation2/configs/mpo_700/filters.yaml` 파일을 생성해주고 코드를 작성합니다.
     
     ```bash
@@ -134,7 +134,7 @@ free_thresh: 0.196
         yaml_filename: "/home/lyh/nav2_ws/src/neobotix/neo_simulation2/maps/aws_keepout.yaml"
     ```
 
-    ![](/assets/img/Screenshot%20from%202025-12-21%2013-17-09.png)
+    ![](/assets/img/ros2nav2/img/Screenshot%20from%202025-12-21%2013-17-09.png)
     - **costmap_filter_info_server**
         - [`nav2_msgs/CostmapFilterInfo`](https://docs.ros.org/en/humble/p/nav2_msgs/interfaces/msg/CostmapFilterInfo.html) 메시지를 Publish
         - 필터 유형 또는 데이터 변환 계수와 같은 메타데이터가 포함
@@ -375,12 +375,12 @@ free_thresh: 0.196
     </div>
     </details>
 
-    ![](/assets/img/Screenshot%20from%202025-12-21%2013-20-38.png)
-    ![](/assets/img/Screenshot%20from%202025-12-21%2013-20-58.png)
-    ![](/assets/img/Screenshot%20from%202025-12-21%2013-21-08.png)
-    ![](/assets/img/Screenshot%20from%202025-12-21%2013-21-19.png)
-    ![](/assets/img/Screenshot%20from%202025-12-21%2013-21-29.png)
-    ![](/assets/img/Screenshot%20from%202025-12-21%2013-21-42.png)
+    ![](/assets/img/ros2nav2/img/Screenshot%20from%202025-12-21%2013-20-38.png)
+    ![](/assets/img/ros2nav2/img/Screenshot%20from%202025-12-21%2013-20-58.png)
+    ![](/assets/img/ros2nav2/img/Screenshot%20from%202025-12-21%2013-21-08.png)
+    ![](/assets/img/ros2nav2/img/Screenshot%20from%202025-12-21%2013-21-19.png)
+    ![](/assets/img/ros2nav2/img/Screenshot%20from%202025-12-21%2013-21-29.png)
+    ![](/assets/img/ros2nav2/img/Screenshot%20from%202025-12-21%2013-21-42.png)
 4. yaml 파일이 추가되었으므로 패키지를 다시 빌드해줍니다.
     
     ```bash
@@ -401,9 +401,9 @@ free_thresh: 0.196
     # terminal 3 (이미 켜져있을 경우 생략)
     ros2 launch neo_nav2_bringup rviz_launch.py
     ```
-    ![](/assets/img/Screenshot%20from%202025-12-21%2013-25-38.png)
+    ![](/assets/img/ros2nav2/img/Screenshot%20from%202025-12-21%2013-25-38.png)
 
-    ![](/assets/img/Peek%202025-12-21%2013-31.gif)
+    ![](/assets/img/ros2nav2/gif/Peek%202025-12-21%2013-31.gif)
 
 6. 아래와 같이 Mask를 생성하여 특정 경로로만 로봇이 주행하도록 할 수도 있습니다.
-    ![](/assets/img/keepoutfilter_1.png)
+    ![](/assets/img/ros2nav2/img/keepoutfilter_1.png)

@@ -23,7 +23,7 @@ hidden: true
 - active
 - finalized
 
-![](/assets/img/Screenshot%20from%202025-12-16%2010-57-00.png)
+![](/assets/img/ros2nav2/img/Screenshot%20from%202025-12-16%2010-57-00.png)
 
 
 ## nav2_lifecycle_manager 패키지를 사용하는 이유
@@ -58,17 +58,17 @@ ros2 interface show nav2_msgs/srv/ManageLifecycleNodes
 
 ```
 
-![](/assets/img/Screenshot%20from%202025-12-16%2011-01-38.png)
+![](/assets/img/ros2nav2/img/Screenshot%20from%202025-12-16%2011-01-38.png)
 
 
 ```
 # localization을 PAUSE 하기
 ros2 service call /lifecycle_manager_localization/manage_nodes nav2_msgs/srv/ManageLifecycleNodes command:\ 1
 ```
-![](/assets/img/Screenshot%20from%202025-12-16%2011-05-05.png)
+![](/assets/img/ros2nav2/img/Screenshot%20from%202025-12-16%2011-05-05.png)
 
 ```
 # 다시 RESUME 하기
 ros2 service call /lifecycle_manager_localization/manage_nodes nav2_msgs/srv/ManageLifecycleNodes command:\ 2
 ```
-![](/assets/img/Screenshot%20from%202025-12-16%2011-06-29.png)
+![](/assets/img/ros2nav2/img/Screenshot%20from%202025-12-16%2011-06-29.png)

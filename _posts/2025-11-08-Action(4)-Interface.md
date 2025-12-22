@@ -38,7 +38,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
 )
 ```
 
-![](/assets/img/Screenshot%20from%202025-11-08%2017-39-43.png)
+![](/assets/img/ros2nav2/img/Screenshot%20from%202025-11-08%2017-39-43.png)
 
 
 - `tutorial_action` 패키지의 `rotate_server.py`에서 두 가지 부분을 수정
@@ -70,4 +70,4 @@ rosidl_generate_interfaces(${PROJECT_NAME}
 ros2 action send_goal -f /rotate_tiago custom_interfaces/action/RotateAbsolute "{theta: 1.5708}"
 ```
 
-![](/assets/img/Peek%202025-11-08%2017-45.gif)
+![](/assets/img/ros2nav2/gif/Peek%202025-11-08%2017-45.gif)

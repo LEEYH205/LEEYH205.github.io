@@ -109,5 +109,5 @@ smoother_server:
     - 값이 클수록 경로가 더 부드럽게 조정
 
 
-![](/assets/img/Peek%202025-12-20%2010-49.gif)
+![](/assets/img/ros2nav2/gif/Peek%202025-12-20%2010-49.gif)
 `/cmd_vel` 평탄화된 걸 볼 수 있다.
