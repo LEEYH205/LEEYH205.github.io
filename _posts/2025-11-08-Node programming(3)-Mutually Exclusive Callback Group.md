@@ -151,7 +151,7 @@ entry_points={
     ],
 },
 ```
-![](/assets/img/Peek%202025-11-08%2021-28.gif)
+![](/assets/img/ros2nav2/gif/Peek%202025-11-08%2021-28.gif)
 
 >당연히 작동안함. 콜백 그룹을 써도 다시 반복 되는 것을 볼 수 있음.
 
@@ -351,7 +351,7 @@ try:
     executor.spin()
 ```
 
-![](/assets/img/Peek%202025-11-08%2021-43.gif)
+![](/assets/img/ros2nav2/gif/Peek%202025-11-08%2021-43.gif)
 
 - 이번에는 **odom_callback(), scan_callback(), timer_callback()**에 대해 하나씩 세 개의 서로 다른 **`MutuallyExclusiveCallbackGroup()`**을 생성했습니다.
 - 또한 executor를 **`MultiThreadedExecutor()`**로 변경하고 스레드 3개를 할당해줬습니다.

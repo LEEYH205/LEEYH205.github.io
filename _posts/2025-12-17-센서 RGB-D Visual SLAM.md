@@ -37,7 +37,7 @@ hidden: true
     	world_file:=small_warehouse.sdf
     ```
 
-![](/assets/img/Screenshot%20from%202025-12-17%2014-32-24.png)
+![](/assets/img/ros2nav2/img/Screenshot%20from%202025-12-17%2014-32-24.png)
 
 
 # RGB-D 기반의 SLAM 알고리즘
@@ -46,7 +46,7 @@ hidden: true
 
 ## RTAB-Map (Real-Time Appearance-Based Mapping)
 
-![](/assets/img/rtab-map.png)
+![](/assets/img/ros2nav2/img/rtab-map.png)
 
 RTAB Map SLAM Diagram
 
@@ -72,39 +72,39 @@ RTAB Map SLAM Diagram
 - 센서 조합
     - RGB-D Camera + Wheel Odometry + 2D LiDAR
         
-        ![](/assets/img/RGB-D%20Camera%20+%20Wheel%20Odometry%20+%202D%20LiDAR.png)
+        ![](/assets/img/ros2nav2/img/RGB-D%20Camera%20+%20Wheel%20Odometry%20+%202D%20LiDAR.png)
         
     - RGB-D Camera + 2D LiDAR
         
-        ![](/assets/img/RGB-D%20Camera%20+%202D%20LiDAR.png)
+        ![](/assets/img/ros2nav2/img/RGB-D%20Camera%20+%202D%20LiDAR.png)
         
     - 2D LiDAR only
         
-        ![](/assets/img/2D%20LiDAR%20only.png)
+        ![](/assets/img/ros2nav2/img/2D%20LiDAR%20only.png)
         
     - 2D LiDAR + Wheel Odometry
         
-        ![](/assets/img/2D%20LiDAR%20+%20Wheel%20Odometry.png)
+        ![](/assets/img/ros2nav2/img/2D%20LiDAR%20+%20Wheel%20Odometry.png)
         
     - RGB-D Camera + Wheel Odometry
         
-        ![](/assets/img/RGB-D%20Camera%20+%20Wheel%20Odometry.png)
+        ![](/assets/img/ros2nav2/img/RGB-D%20Camera%20+%20Wheel%20Odometry.png)
         
     - RGB-D Camera Only
         
-        ![](/assets/img/RGB-D%20Camera%20Only.png)
+        ![](/assets/img/ros2nav2/img/RGB-D%20Camera%20Only.png)
         
     - Stereo Camera
         
-        ![](/assets/img/Stereo%20Camera.png)
+        ![](/assets/img/ros2nav2/img/Stereo%20Camera.png)
 
 
 https://www.youtube.com/watch?v=qpTS7kg9J3A
 
 https://www.youtube.com/watch?v=X885QsH0szo
 
-![](/assets/img/Screenshot%20from%202025-12-17%2014-50-17.png)
-![](/assets/img/Screenshot%20from%202025-12-17%2014-48-53.png)
+![](/assets/img/ros2nav2/img/Screenshot%20from%202025-12-17%2014-50-17.png)
+![](/assets/img/ros2nav2/img/Screenshot%20from%202025-12-17%2014-48-53.png)
 
 3. 위 토픽들을 RTAB-Map에서 사용할 수 있도록 적절한 argument와 함께 런치 파일을 실행시킵니다.
     
@@ -128,4 +128,4 @@ https://www.youtube.com/watch?v=X885QsH0szo
     ros2 run teleop_twist_keyboard teleop_twist_keyboard
     ```
 
-![](/assets/img/Peek%202025-12-17%2014-56.gif)
+![](/assets/img/ros2nav2/gif/Peek%202025-12-17%2014-56.gif)

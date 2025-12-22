@@ -47,8 +47,8 @@ rviz2 -d nav2_default_view.rviz
 ros2 service call /reinitialize_global_localization std_srvs/srv/Empty
 ```
 
-![](/assets/img/Peek%202025-12-17%2010-16.gif)
-![](/assets/img/Peek%202025-12-17%2010-18.gif)
+![](/assets/img/ros2nav2/gif/Peek%202025-12-17%2010-16.gif)
+![](/assets/img/ros2nav2/gif/Peek%202025-12-17%2010-18.gif)
 Global Localization 수행 후 초기 위치 추정에 실패한 것을 확인할 수 있다.
 
 map 전체에 파티클을 뿌리는 건데, 부족하다.
@@ -152,7 +152,7 @@ entry_points={
 },
 ```
 
-![](/assets/img/Peek%202025-12-17%2011-10.gif)
+![](/assets/img/ros2nav2/gif/Peek%202025-12-17%2011-10.gif)
 max_particles : 40000
 mim_particles : 1000
 으로 하고,
@@ -302,7 +302,7 @@ def main(args=None):
 if __name__ == '__main__':
     main()
 ```
-![](/assets/img/Peek%202025-12-17%2012-27.gif)
+![](/assets/img/ros2nav2/gif/Peek%202025-12-17%2012-27.gif)
 
 republish_initialpose()는 restore 직후 한 번만 말고, AMCL이 흔들릴 수 있으니 0.5초 간격으로 2~3번 쏴줌.
 

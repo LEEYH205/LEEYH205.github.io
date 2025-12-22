@@ -100,7 +100,7 @@ bt_navigator:
 ```
 
 - `default_nav_to_pose_bt_xml`, `default_nav_through_poses_bt_xml` 파라미터에서 경로가 제대로 성정되지 않았다면 기본 xml 파일이 자동으로 설정됩니다.
-![](/assets/img/Screenshot%20from%202025-12-20%2011-38-17.png)
+![](/assets/img/ros2nav2/img/Screenshot%20from%202025-12-20%2011-38-17.png)
 
 - `default_nav_to_pose_bt_xml` 파라미터 처리
     
@@ -162,8 +162,8 @@ bt_navigator:
     ```
     nav2_bt_navigator/src/navigators/navigate_through_poses.cpp
 
-    ![](/assets/img/Screenshot%20from%202025-12-20%2011-43-48.png)
-    ![](/assets/img/Peek%202025-12-20%2011-46.gif)
-    ![](/assets/img/Peek%202025-12-20%2011-48.gif)
+    ![](/assets/img/ros2nav2/img/Screenshot%20from%202025-12-20%2011-43-48.png)
+    ![](/assets/img/ros2nav2/gif/Peek%202025-12-20%2011-46.gif)
+    ![](/assets/img/ros2nav2/gif/Peek%202025-12-20%2011-48.gif)
 
     `Running spin`, `Running wait`, `Running backup` 을 진행하는 것을 볼 수 있다.

@@ -57,7 +57,7 @@ hidden: true
     touch navigate_through_poses.py
     ```
     
-![](/assets/img/Screenshot%20from%202025-12-21%2012-10-53.png)
+![](/assets/img/ros2nav2/img/Screenshot%20from%202025-12-21%2012-10-53.png)
 3. 방금 만든 파일에 다음 코드를 복사합니다.
     
     ```python
@@ -212,5 +212,5 @@ hidden: true
     ros2 run nav2_programming navigate_through_poses
     ```
 
-![](/assets/img/Peek%202025-12-21%2012-16.gif)
+![](/assets/img/ros2nav2/gif/Peek%202025-12-21%2012-16.gif)
 설정해 놓은 경로를 찍고 다음 경로로 이동하는 것을 볼 수 있다.

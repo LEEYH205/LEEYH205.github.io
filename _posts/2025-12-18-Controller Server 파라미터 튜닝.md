@@ -13,8 +13,8 @@ hidden: true
 ```BASH
 ros2 launch two_wheeled_robot factory_world_v1.launch.py
 ```
-![](/assets/img/Screenshot%20from%202025-12-18%2011-24-23.png)
-![](/assets/img/Peek%202025-12-18%2011-25.gif)
+![](/assets/img/ros2nav2/img/Screenshot%20from%202025-12-18%2011-24-23.png)
+![](/assets/img/ros2nav2/gif/Peek%202025-12-18%2011-25.gif)
 
 움직이는 물체, 사람도 시뮬레이션 환경에서 만들 수 있다.
 actor plugin
@@ -178,7 +178,7 @@ controller_server:
 
 # [DWB Controller](https://docs.nav2.org/configuration/packages/configuring-dwb-controller.html)
 
-![dwa.gif](/assets/img/dwa.gif)
+![dwa.gif](/assets/img/ros2nav2/gif/dwa.gif)
 
 - DWA (Dynamic Window Approach) 알고리즘을 바탕으로 개선되었으며, 로봇의 현재 속도와 가속도를 기반으로, 주어진 시간 내에서 가능한 속도와 방향을 평가하여 최적의 속도 명령을 생성
 (ROS 1의 dwa_local_planner)

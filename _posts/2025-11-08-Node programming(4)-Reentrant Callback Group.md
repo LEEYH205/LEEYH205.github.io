@@ -205,7 +205,7 @@ ros2 run node_exercise callback_groups_example -service_wait_time 5.0 -timer_per
 ```bash
 ros2 service call /dummy_server_srv std_srvs/srv/SetBool data:\ false
 ```
-![](/assets/img/Peek%202025-11-08%2022-02.gif)
+![](/assets/img/ros2nav2/gif/Peek%202025-11-08%2022-02.gif)
 
 - 보시다시피 두 콜백을 동시에 실행합니다. 그 이유는 다음과 같습니다.
     - 두 개의 스레드 설정
@@ -218,7 +218,7 @@ ros2 run node_exercise callback_groups_example -service_wait_time 5.0 -timer_per
 ```bash
 ros2 service call /dummy_server_srv std_srvs/srv/SetBool data:\ false
 ```
-![](/assets/img/Peek%202025-11-08%2022-06.gif)
+![](/assets/img/ros2nav2/gif/Peek%202025-11-08%2022-06.gif)
 - 보시다시피 두 콜백을 동시에 실행합니다. 그 이유는 다음과 같습니다.
     - 두 개의 스레드 설정
     - `Reentrant Callback Group` 유형을 설정하면 두 콜백이 모두 같은 콜백 그룹에 속하고, 충분한 스레드가 있다면 병렬 콜백 함수를 실행할 수 있습니다.
@@ -230,7 +230,7 @@ ros2 run node_exercise callback_groups_example -service_wait_time 5.0 -timer_per
 ```bash
 ros2 service call /dummy_server_srv std_srvs/srv/SetBool data:\ false
 ```
-![](/assets/img/Peek%202025-11-08%2022-11.gif)
+![](/assets/img/ros2nav2/gif/Peek%202025-11-08%2022-11.gif)
 - 보시다시피 이제 **한 번에 하나의 콜백만** 실행합니다. 그 이유는 다음과 같습니다.
     - **하나의** 스레드만 설정했습니다.
     - `Reentrant Callback Group` 유형을 설정하면 두 콜백이 모두 같은 콜백 그룹에 속하고, 충분한 스레드가 있다면 병렬 콜백 함수를 실행할 수 있습니다.

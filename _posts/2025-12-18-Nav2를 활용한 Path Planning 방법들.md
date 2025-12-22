@@ -46,20 +46,20 @@ hidden: true
     ros2 launch neuronbot2_gazebo neuronbot2_world.launch.py
     ```
 
-    ![](/assets/img/Screenshot%20from%202025-12-18%2010-40-52.png)
+    ![](/assets/img/ros2nav2/img/Screenshot%20from%202025-12-18%2010-40-52.png)
 3. 사전에 만들어 놓은 지도를 불러오고 localization 활용하기 위해, `neuronbot2_nav` 패키지의 `bringup_launch.py` 파일을 위에서 [언급했던대로](https://www.notion.so/1dbdec25546e4a319c5a6c68610151ef?pvs=21) 수정해줍니다.
 4. Path Planning 수행을 위한 아래 통합 런치 파일을 시작해줍니다.
     
     ```python
     ros2 launch neuronbot2_nav bringup_launch.py use_sim_time:=true
     ```
-    ![](/assets/img/Screenshot%20from%202025-12-18%2010-42-49.png)
+    ![](/assets/img/ros2nav2/img/Screenshot%20from%202025-12-18%2010-42-49.png)
 5. 지도에서 로봇의 초기 위치가 올바르지 않을 경우, `2D Pose Estimate` 버튼을 클릭한 후 다음 시뮬레이터 상에서 로봇의 실제 위치에 해당하는 위치와 방향을 클릭해줍니다.
 
     
 6. Rviz2의 `2D Goal Pose` 버튼으로 목적에 해당하는 위치와 방향을 클릭해 자율주행 결과를 확인합니다.
     
-![](/assets/img/Peek%202025-12-18%2010-44.gif)
+![](/assets/img/ros2nav2/gif/Peek%202025-12-18%2010-44.gif)
 
 
 ## [방법2] Action Server
@@ -69,7 +69,7 @@ hidden: true
 ```bash
 ros2 action send_goal /navigate_to_pose nav2_msgs/action/NavigateToPose "pose: {header: {frame_id: map}, pose: {position: {x: 1.52, y: 1.92, z: 0.0}, orientation:{x: 0.0, y: 0.0, z: 0, w: 1.0000000}}}"
 ```
-![](/assets/img/Peek%202025-12-18%2010-55.gif)
+![](/assets/img/ros2nav2/gif/Peek%202025-12-18%2010-55.gif)
 
 ## [방법3] Topic
 
@@ -78,7 +78,7 @@ ros2 action send_goal /navigate_to_pose nav2_msgs/action/NavigateToPose "pose: {
 ```bash
 ros2 topic pub -1 /goal_pose geometry_msgs/PoseStamped "{header: {stamp: {sec: 0}, frame_id: 'map'}, pose: {position: {x: 2.2, y: 0.0, z: 0.0}, orientation: {w: 1.0}}}"
 ```
-![](/assets/img/Peek%202025-12-18%2010-58.gif)
+![](/assets/img/ros2nav2/gif/Peek%202025-12-18%2010-58.gif)
 ## [방법4] 프로그래밍
 
 - `/navigate_to_pose` 액션 서버를 활용한 코드

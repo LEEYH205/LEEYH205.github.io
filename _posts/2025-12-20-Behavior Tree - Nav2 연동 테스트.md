@@ -62,15 +62,15 @@ ros2 launch neuronbot2_gazebo neuronbot2_world.launch.py
 ros2 launch neuronbot2_nav bringup_launch.py use_sim_time:=true
 ```
 
-![](/assets/img/Screenshot%20from%202025-12-20%2015-57-14.png)
+![](/assets/img/ros2nav2/img/Screenshot%20from%202025-12-20%2015-57-14.png)
 
 
 # [실습 1] 정해진 경유지 반복하여 방문하기
 ```dash
 ros2 launch bt_ros2 bt_ros2.launch.py
 ```
-![](/assets/img/Screenshot%20from%202025-12-20%2015-57-41.png)
-![](/assets/img/bt_nav2_1.png)
+![](/assets/img/ros2nav2/img/Screenshot%20from%202025-12-20%2015-57-41.png)
+![](/assets/img/ros2nav2/img/bt_nav2_1.png)
 - **메인 트리 구조 (MainTree)**
     - "MainTree"라는 ID를 가진 주 행동 트리가 정의되어 있음
     - 이 트리는 전체 시퀀스를 3번 반복 (Repeat 노드)
@@ -80,7 +80,7 @@ ros2 launch bt_ros2 bt_ros2.launch.py
 - **이동 시퀀스**
     - 정의된 세 목표 지점으로 순차적으로 이동
     - 각 이동은 "MoveRobot" 서브트리를 호출하여 실행
-![](/assets/img/Peek%202025-12-20%2016-05.gif)
+![](/assets/img/ros2nav2/gif/Peek%202025-12-20%2016-05.gif)
 
 
 
@@ -125,7 +125,7 @@ ros2 topic pub -1 /interrupt_event std_msgs/msg/String data:\ \'gohome\'
 </root>
 
 ```
-![](/assets/img/bt_nav2_2.png)
+![](/assets/img/ros2nav2/img/bt_nav2_2.png)
 - 목표 설정
     - 세 개의 목표 위치(Goal_a, Goal_b, Goal_c)가 SetBlackboard 노드를 통해 정의됨
 - 주요 행동 구조 (Fallback 노드 내)
@@ -143,5 +143,5 @@ ros2 topic pub -1 /interrupt_event std_msgs/msg/String data:\ \'gohome\'
         - 첫 번째 행동이 중단되거나 완료되면 실행
         - MoveRobot 서브트리를 사용하여 Goal_c로 이동
 
-![](/assets/img/Screenshot%20from%202025-12-20%2016-13-27.png)
-![](/assets/img/Peek%202025-12-20%2016-12.gif)
+![](/assets/img/ros2nav2/img/Screenshot%20from%202025-12-20%2016-13-27.png)
+![](/assets/img/ros2nav2/gif/Peek%202025-12-20%2016-12.gif)

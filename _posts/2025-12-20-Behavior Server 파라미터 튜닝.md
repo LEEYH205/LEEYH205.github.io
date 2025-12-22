@@ -130,32 +130,32 @@ behavior_server:
 
 
 ---
-![](/assets/img/Screenshot%20from%202025-12-20%2010-59-15.png)
-![](/assets/img/Screenshot%20from%202025-12-20%2010-59-59.png)
+![](/assets/img/ros2nav2/img/Screenshot%20from%202025-12-20%2010-59-15.png)
+![](/assets/img/ros2nav2/img/Screenshot%20from%202025-12-20%2010-59-59.png)
 
  ```bash
     # DriveOnHeading behavior 테스트
     ros2 action send_goal /drive_on_heading nav2_msgs/action/DriveOnHeading "{target: {x: 1.0, y: 0.0, z: 0.0}, speed: 0.2}"
 ```
-![](/assets/img/Peek%202025-12-20%2011-02.gif)
-![](/assets/img/Peek%202025-12-20%2011-03.gif)
+![](/assets/img/ros2nav2/gif/Peek%202025-12-20%2011-02.gif)
+![](/assets/img/ros2nav2/gif/Peek%202025-12-20%2011-03.gif)
 
 
 ```bash
     # BackUp behavior 테스트
     ros2 action send_goal /backup nav2_msgs/action/BackUp "{target: {x: -2.0, y: 0.0, z: 0.0}, speed: 0.2}"
 ```
-![](/assets/img/Peek%202025-12-20%2011-06.gif)
+![](/assets/img/ros2nav2/gif/Peek%202025-12-20%2011-06.gif)
 
 ```bash
     # Spin behavior 테스트
     ros2 action send_goal /spin nav2_msgs/action/Spin target_yaw:\ 3.14
 ```
-![](/assets/img/Peek%202025-12-20%2011-08.gif)
+![](/assets/img/ros2nav2/gif/Peek%202025-12-20%2011-08.gif)
 
 
 ---
-![](/assets/img/Peek%202025-12-20%2011-12.gif)
+![](/assets/img/ros2nav2/gif/Peek%202025-12-20%2011-12.gif)
 `Running spin`,
 `Running backup`,
 `Running wait`,

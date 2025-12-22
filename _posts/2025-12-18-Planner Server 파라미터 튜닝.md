@@ -44,7 +44,7 @@ hidden: true
 ```BASH
 ros2 launch two_wheeled_robot car_world_v1.launch.py
 ```
-![](/assets/img/Screenshot%20from%202025-12-18%2011-22-00.png)
+![](/assets/img/ros2nav2/img/Screenshot%20from%202025-12-18%2011-22-00.png)
 
 # Planner 파라미터 튜닝
 
@@ -92,13 +92,13 @@ ros2 launch two_wheeled_robot car_world_v1.launch.py
 - NavfnPlanner은 ROS 1 때 부터 약 10년 이상 매우 안정적이었기 때문에, ROS 2에서는 다른 플래너의 포팅 없이 기본 Global Planner로서 사용되고 있습니다.
 - Dijkstra 모드(`use_astar` = false)에서는 어떤 조건에서도 최단 경로를 찾을 수 있도록 Dijkstra의 검색 알고리즘이 보장됩니다.
     
-    ![Dijkstra Algorithm](/assets/img/Dijkstra_algorithm.gif)
+    ![Dijkstra Algorithm](/assets/img/ros2nav2/gif/Dijkstra_algorithm.gif)
     
     Dijkstra Algorithm
     
 - A* 모드(`use_astar` = true)에서는 A*의 검색 알고리즘이 최단 경로를 찾는다는 보장은 없지만, 목표를 향해 잠재적 필드를 확장하여 가능한 경로를 더 빨리 찾을 수 있도록 합니다.
     
-    ![A* Algorithm](/assets/img/Aalgorithm.gif)
+    ![A* Algorithm](/assets/img/ros2nav2/gif/Aalgorithm.gif)
     A* Algorithm
     
 

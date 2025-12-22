@@ -86,7 +86,7 @@ entry_points={
 ```
 &nbsp;
 
-![](/assets/img/Peek_2025-11-05_23-40.gif)
+![](/assets/img/ros2nav2/gif/Peek_2025-11-05_23-40.gif)
 &nbsp;
 
 ---

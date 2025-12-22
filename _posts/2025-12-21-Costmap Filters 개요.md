@@ -26,7 +26,7 @@ hidden: true
 
 
 ## Keepout Filter
-![](/assets/img/Screenshot%20from%202025-12-21%2012-53-43.png)
+![](/assets/img/ros2nav2/img/Screenshot%20from%202025-12-21%2012-53-43.png)
 
 ## Speed Filter
 • Speed Filter는 Keepout Filter 유사하지만, 지도의 셀에 해당하는 영역 값이 속도 제한이라는 다른 의미를 갖음
@@ -36,4 +36,4 @@ hidden: true
 
 - 회색의 비율이 밝을수록 제한 속도가 낮아지고, 회색이 진할수록 제한 속도가 높아짐
 
-![](/assets/img/Screenshot%20from%202025-12-21%2012-54-49.png)
+![](/assets/img/ros2nav2/img/Screenshot%20from%202025-12-21%2012-54-49.png)

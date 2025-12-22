@@ -46,7 +46,7 @@ builtin_interfaces/Time current_time
 ```
 
 
-![](/assets/img/Screenshot%20from%202025-11-08%2016-33-28.png)
+![](/assets/img/ros2nav2/img/Screenshot%20from%202025-11-08%2016-33-28.png)
 
 play_motion_client.py
 ```python
@@ -166,5 +166,5 @@ ros2 run tutorial_action play_motion_client
     - reach_floor
     - reach_max
 
-![](/assets/img/Peek%202025-11-08%2016-53.gif)
-![](/assets/img/Peek%202025-11-08%2016-56.gif)
+![](/assets/img/ros2nav2/gif/Peek%202025-11-08%2016-53.gif)
+![](/assets/img/ros2nav2/gif/Peek%202025-11-08%2016-56.gif)
