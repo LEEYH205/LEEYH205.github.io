@@ -1,7 +1,7 @@
 ---
 title: "2025-11-08-Node programming(4)-Reentrant Callback Group"
 date: 2025-11-08 21:50:00 +0900
-categories: [ROBOTICS]
+categories: [ROBOTICS, ROS2Nav2]
 tags: [Robotics, Node Programming, Executor, Callback Group, Reentrant Callback Group]
 description: ""
 pin: false

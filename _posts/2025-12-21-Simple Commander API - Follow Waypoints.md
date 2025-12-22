@@ -1,7 +1,7 @@
 ---
 title: "Simple Commander API - Follow Waypoints"
 date: 2025-12-21 11:10:00 +0900
-categories: [ROBOTICS]
+categories: [ROBOTICS, ROS2Nav2]
 tags: [Robotics, ROS2, Nav2, Simple Commander API, Follow Waypoints]
 description: ""
 pin: false

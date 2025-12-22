@@ -1,7 +1,7 @@
 ---
 title: "2025-11-08-Node programming(2)-Executor, Callback Group"
 date: 2025-11-08 21:00:00 +0900
-categories: [ROBOTICS]
+categories: [ROBOTICS, ROS2Nav2]
 tags: [Robotics, Node Programming, Executor, Callback Group]
 description: ""
 pin: false

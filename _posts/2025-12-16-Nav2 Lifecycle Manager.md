@@ -1,7 +1,7 @@
 ---
 title: "Nav2 Lifecycle Manager"
 date: 2025-12-16 11:00:00 +0900
-categories: [ROBOTICS]
+categories: [ROBOTICS, ROS2Nav2]
 tags: [Robotics, ROS2, SLAM, Nav2 Lifecycle Manager]
 description: ""
 pin: false

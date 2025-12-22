@@ -1,7 +1,7 @@
 ---
 title: "Action(4)-Interface"
 date: 2025-11-08 17:30:00 +0900
-categories: [ROBOTICS]
+categories: [ROBOTICS, ROS2Nav2]
 tags: [Robotics, Action, Interface]
 description: ""
 pin: false

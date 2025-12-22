@@ -1,7 +1,7 @@
 ---
 title: "SLAM에서의 Ground Truth"
 date: 2025-12-17 15:00:00 +0900
-categories: [ROBOTICS]
+categories: [ROBOTICS, ROS2Nav2]
 tags: [Robotics, ROS2, SLAM, Ground Truth]
 description: ""
 pin: false

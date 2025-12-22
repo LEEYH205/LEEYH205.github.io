@@ -1,7 +1,7 @@
 ---
 title: "Nav2를 활용한 Path Planning 방법들"
 date: 2025-12-18 10:00:00 +0900
-categories: [ROBOTICS]
+categories: [ROBOTICS, ROS2Nav2]
 tags: [Robotics, ROS2, Nav2, Path Planning]
 description: ""
 pin: false

@@ -1,7 +1,7 @@
 ---
 title: "Interface Type 비교"
 date: 2025-11-08 15:50:00 +0900
-categories: [ROBOTICS]
+categories: [ROBOTICS, ROS2Nav2]
 tags: [Robotics, Interface]
 description: ""
 pin: false

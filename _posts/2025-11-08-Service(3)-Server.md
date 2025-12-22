@@ -1,7 +1,7 @@
 ---
 title: "Service(3)-Server"
 date: 2025-11-08 15:00:00 +0900
-categories: [ROBOTICS]
+categories: [ROBOTICS, ROS2Nav2]
 tags: [Robotics, Service, Server]
 description: ""
 pin: false

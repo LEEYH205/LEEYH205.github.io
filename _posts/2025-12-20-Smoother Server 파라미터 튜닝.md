@@ -1,7 +1,7 @@
 ---
 title: "Smoother Server 파라미터 튜닝"
 date: 2025-12-20 10:20:00 +0900
-categories: [ROBOTICS]
+categories: [ROBOTICS, ROS2Nav2]
 tags: [Robotics, ROS2, Nav2, Smoother, Parameter, tuning]
 description: ""
 pin: false
