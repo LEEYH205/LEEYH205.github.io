@@ -3,6 +3,11 @@ title: "LangChain으로 AI 에이전트 만들기: 실습"
 date: 2025-09-05 19:30:00 +0900
 categories: [AI, LangChain, 에이전트]
 tags: [LangChain, AI에이전트, 오케스트레이션, 자동화]
+description: ""
+pin: false
+math: true
+mermaid: true
+hidden: false
 ---
 
 # LangChain으로 AI 에이전트 만들기: 완전 실습

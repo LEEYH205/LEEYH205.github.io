@@ -5,9 +5,9 @@ categories: [ROBOTICS, ROS2Nav2]
 tags: [Robotics, ROS2, Nav2, Behavior Tree]
 description: ""
 pin: false
-math: false
-mermaid: false
-hidden: true
+math: true
+mermaid: true
+hidden: false
 ---
 # 테스트 환경
 1. `nav2_ws/src` 디렉터리에 simple_bt_example 이라은 이름의 새 패키지를 만든다.
