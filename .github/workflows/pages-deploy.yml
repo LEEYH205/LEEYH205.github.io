@@ -37,9 +37,10 @@ jobs:
           # (See: https://github.com/cotes2020/chirpy-starter/tree/main/assets)
 
       - name: Setup Git LFS
+        continue-on-error: true
         run: |
           git lfs install
-          git lfs pull
+          git lfs pull || echo "Warning: LFS pull failed due to quota limit. Continuing build without LFS files."
 
       - name: Setup Pages
         id: pages
