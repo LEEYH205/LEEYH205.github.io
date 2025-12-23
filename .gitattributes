@@ -8,12 +8,11 @@
 *.{cmd,[cC][mM][dD]} text eol=crlf
 *.{bat,[bB][aA][tT]} text eol=crlf
 # Denote all files that are truly binary and should not be modified.
-*.png filter=lfs diff=lfs merge=lfs -text
-*.jpg filter=lfs diff=lfs merge=lfs -text
-*.jpeg filter=lfs diff=lfs merge=lfs -text
+# PNG/JPG files are managed by regular Git (not LFS) to avoid GitHub quota limits
+*.png binary
+*.jpg binary
+*.jpeg binary
 *.ico binary
+# Only GIF files use LFS (large animated files)
 *.gif filter=lfs diff=lfs merge=lfs -text
-*.png !text !filter !merge !diff
-*.jpg !text !filter !merge !diff
-*.jpeg !text !filter !merge !diff
 assets/img/unused/*.gif !text !filter !merge !diff
