@@ -60,13 +60,25 @@ else
     fi
 fi
 
-# LFS 파일 가져오기
+# LFS 파일 가져오기 (선택사항)
 echo ""
-echo "📥 LFS 파일 가져오는 중..."
-if git lfs pull 2>/dev/null; then
-    echo "✅ LFS 파일 동기화 완료"
+echo "📥 LFS 파일 가져오기 (선택사항)"
+echo "   블로그 글 작성에는 LFS 파일(GIF)이 필수적이지 않습니다."
+echo "   마크다운 파일만 있으면 글 작성이 가능합니다."
+echo ""
+read -p "LFS 파일을 다운로드하시겠습니까? (y/N): " -n 1 -r
+echo
+if [[ $REPLY =~ ^[Yy]$ ]]; then
+    echo "📥 LFS 파일 가져오는 중..."
+    if git lfs pull 2>/dev/null; then
+        echo "✅ LFS 파일 동기화 완료"
+    else
+        echo "⚠️  LFS pull 실패 (예산 초과일 수 있음)."
+        echo "   마크다운 파일만으로도 글 작성이 가능합니다."
+    fi
 else
-    echo "⚠️  LFS pull 실패 (예산 초과일 수 있음). 계속 진행합니다."
+    echo "⏭️  LFS 파일 다운로드를 건너뜁니다."
+    echo "   마크다운 파일만으로도 글 작성이 가능합니다."
 fi
 
 echo ""
