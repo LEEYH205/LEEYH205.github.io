@@ -25,3 +25,7 @@ package-lock.json
 # Misc
 _sass/vendors
 assets/js/dist
+
+# Scripts (optional - remove if you want to commit them)
+# sync.sh
+# commit-push.sh
