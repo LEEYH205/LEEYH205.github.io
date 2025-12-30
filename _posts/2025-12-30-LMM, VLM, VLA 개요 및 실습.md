@@ -225,6 +225,7 @@ touch vlm_basic.py vlm_bbox.py vlm_robot_action.py vla_style_pipeline.py
 > 이미지 URL을 입력받아 로봇 주행 관점에서 장면을 분석
 > 
 
+{% raw %}
 ```python
 import argparse
 
@@ -558,6 +559,7 @@ def main() -> None:
 if __name__ == "__main__":
     main()
 ```
+{% endraw %}
 
 - **동작 흐름**
     1. 이미지 URL 다운로드 → (width, height) 파악
